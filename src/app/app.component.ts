@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'eyesonrobert';
+  title = 'EyesOnRobert';
+
+  constructor() {}
+
+  scroll(el) {
+    document.getElementById(el);
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -85;
+
+    window.scrollTo({
+      top: yCoordinate + yOffset,
+      behavior: 'smooth'
+    });
+  }
 }

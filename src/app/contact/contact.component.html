@@ -1,0 +1,74 @@
+<div class="contact">
+
+  <div>
+    <div class="container col-md-8">
+      <br>
+      <form class="form form-horizontal form-bordered" (ngSubmit)="onClickSubmit()" [formGroup]="contactForm">
+        <div class="form-body">
+          <div class="row">
+            <!-- Name -->
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="col-md-3 label-control" style="font-size: 50%"> Name</label>
+                <div class="col-md-9">
+                  <input type="text" formControlName="name" class="form-control" />
+                  <div class="invalid-feedback d-block" *ngIf="
+                            !f['name'].valid &&
+                            (f['name'].dirty || f['name'].touched)
+                          " style="font-size: 60%">
+                    Name is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- email -->
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="col-md-3 label-control" style="font-size: 50%"> Email</label>
+                <div class="col-md-9">
+                  <input type="text" formControlName="email" class="form-control" />
+                  <div class="invalid-feedback d-block" *ngIf="
+                      !f['email'].valid &&
+                      (f['email'].dirty || f['email'].touched)
+                    " style="font-size: 60%">
+                    Email is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- message -->
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="col-md-3 label-control" style="font-size: 50%"> Message</label>
+                <div class="col-md-9">
+                  <textarea rows="4" cols="50" class="form-control" formControlName="message"></textarea>
+                  <div class="invalid-feedback d-block" *ngIf="
+                  !f['message'].valid &&
+                  (f['message'].dirty || f['message'].touched)
+                " style="font-size: 60%">
+                    Message is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-actions float-right">
+            <button type="submit" class="btn btn-raised btn-primary" [disabled]="!contactForm.valid">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="flex-container offset-4" style="text-align: center">
+    <div>
+      <a href="https://www.github.com/eyesonrobert" target="_blank"><img src="../assets/images/github.png" alt="GitHub"
+          style="width:30px; height: auto;">Github</a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/eyesonrobert/" target="_blank"> <img src="../assets/images/linkedin.png"
+          alt="LinkedIn" style="width:30px; height: auto;">LinkedIn</a>
+    </div>
+  </div>
+</div>
