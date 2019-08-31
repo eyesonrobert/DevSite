@@ -1,16 +1,51 @@
 .appComponent {
-  background: rgba(216, 191, 216, 0.164);
-  width: 100%
+  // background-image: url("../assets/images/profile.png");
+  // height: 100%;
+  // width: 100%;
+  // background-repeat: no-repeat;
+
 }
 
-app-header {
+.triangle {
+  height: 0;
+  width: 0;
+  border-left: 100px solid red;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid transparent;
+  padding: 0px;
+}
+
+.my-container {
+  position: relative;
+  overflow: hidden;
+}
+
+// .my-container h1 {
+//   padding: 200px;
+//   position: relative;
+//   z-index: 2;
+// }
+
+.my-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+
+.head {
   z-index: 1000;
   box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.3);
   color: gray;
   background-color: #000000;
   font-size: 2rem;
   height: 80px;
-  margin-bottom: 20%;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .title {

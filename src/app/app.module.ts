@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
@@ -17,6 +19,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +28,13 @@ import { ContactComponent } from './contact/contact.component';
     AboutMeComponent,
     ExperienceComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NgbModule,
     MatButtonModule,
     MatCheckboxModule,
     FormsModule,
@@ -43,4 +48,4 @@ import { ContactComponent } from './contact/contact.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
