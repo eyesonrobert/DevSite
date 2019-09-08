@@ -1,6 +1,6 @@
 .portfolio {
   font-size: 2rem;
-  background: rgba(231, 224, 231, 0.164);
+  text-align: center
 }
 
 .flex-container {
@@ -96,4 +96,21 @@ img:hover {
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+#container {
+  // background-color: rgb(157, 218, 218);
+  display: flex;
+  width: 100%;
+  height: 300px;
+  // flex-direction: column; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 130px;
+  height: auto;
+  flex: 1;
 }

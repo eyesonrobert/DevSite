@@ -1,19 +1,48 @@
 .experience {
-  background-image: linear-gradient(rgba(19, 138, 207, 0.459), rgba(19, 151, 89, 0.568));
   display: flex;
   flex-wrap: wrap;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.rectangle {
-  width: 20px;
-  height: 5px;
-  background: rgb(4, 79, 122);
-  margin-top: 17px;
-  margin-left: 10px;
-  margin-right: 10px;
+// .rectangle {
+//   width: 20px;
+//   height: 5px;
+//   background: rgb(4, 79, 122);
+//   margin-top: 17px;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+
+b {
+  font-size: 1.5em;
 }
 
 .title {
   font-size: 2rem;
+}
+
+.resume {
+  width: 80%;
+  background-image: linear-gradient(rgba(158, 196, 218, 0.459), rgba(204, 84, 29, 0.39));
+  background-color: white
+}
+
+.cartoon {
+  width: 20%;
+  background-image: linear-gradient(rgba(158, 196, 218, 0.459), rgba(204, 84, 29, 0.39));
+  background-color: white
+}
+
+.raised-card {
+  margin: 2em 4em;
+  border: 6px outset silver;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+.raised-conent {
+  margin: 10px;
 }
