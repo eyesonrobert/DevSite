@@ -1,24 +1,10 @@
 .experience {
   display: flex;
   flex-wrap: wrap;
-  font-family: Arial, Helvetica, sans-serif;
 }
-
-// .rectangle {
-//   width: 20px;
-//   height: 5px;
-//   background: rgb(4, 79, 122);
-//   margin-top: 17px;
-//   margin-left: 10px;
-//   margin-right: 10px;
-// }
 
 b {
   font-size: 1.5em;
-}
-
-.title {
-  font-size: 2rem;
 }
 
 .resume {
@@ -30,19 +16,58 @@ b {
 .cartoon {
   width: 20%;
   background-image: linear-gradient(rgba(158, 196, 218, 0.459), rgba(204, 84, 29, 0.39));
-  background-color: white
+  background-color: white;
+
+}
+
+img {
+  height: 600px;
+  width: auto;
+  // border-radius: 5%;
 }
 
 .raised-card {
-  margin: 2em 4em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  // margin: 2em 4em;
   border: 6px outset silver;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
   font-family: 'Quicksand', sans-serif;
-  margin-left: 15px;
+  margin-left: 30px;
   font-size: 1.2rem;
 }
 
 .raised-conent {
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .resume {
+    width: 100%;
+  }
+
+  .cartoon {
+    width: 100%;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    // border-radius: 5%;
+    align-content: center
+  }
+
+  .raised-card {
+    margin: 2em 4em;
+    border: 6px outset silver;
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    width: 90%;
+  }
 }

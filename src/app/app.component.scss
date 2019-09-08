@@ -40,3 +40,21 @@
   cursor: pointer;
   font-family: 'Poiret One', cursive;
 }
+
+@media only screen and (max-width: 600px) {
+  .head {
+    z-index: 1000;
+    box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.3);
+    color: gray;
+    background-color: #000000;
+    font-size: 2rem;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .navigation {
+    font-size: 1.0rem;
+  }
+}

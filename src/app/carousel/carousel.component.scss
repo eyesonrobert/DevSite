@@ -8,7 +8,20 @@ h3 {
   outline: none;
 }
 
+img {
+  height: 300px;
+  width: auto;
+}
 
-a {
-  color: red
+@media only screen and (max-width: 600px) {
+  img {
+    height: auto;
+    width: 250px;
+    float: left;
+  }
+
+  h3 {
+    float: right;
+    margin-bottom: 40px;
+  }
 }
